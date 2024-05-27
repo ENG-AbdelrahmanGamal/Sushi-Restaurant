@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/selective_color_1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textColor="#322e2b"
+        android:textSize="56.5sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:hint="user name "
+        android:drawablePadding="7dp"
+        android:paddingStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:drawableStart="@drawable/sharp_person_24" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="20dp"
+            android:drawablePadding="7dp"
+            android:paddingStart="5dp"
+            android:hint="E-mail"
+            android:drawableStart="@drawable/baseline_attach_email_24" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:drawablePadding="7dp"
+            android:hint="password"
+            android:paddingStart="5dp"
+            android:drawableStart="@drawable/baseline_lock_24" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:hint="Phone Number "
+        android:layout_marginEnd="20dp"
+        android:drawablePadding="7dp"
+        android:paddingStart="5dp"
+        android:drawableStart="@drawable/baseline_local_phone_24" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_signIN"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="90dp"
+        android:backgroundTint="@color/main"
+        android:text="@string/register"
+        />
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_marginStart="100dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/google"/>
+            <ImageView
+                android:layout_marginStart="20dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/facebook"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Alreadyhaveanaccoun"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

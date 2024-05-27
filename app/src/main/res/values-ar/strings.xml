@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="order">طلب</string>
+    <string name="menu">القائمة</string>
+    <string name="MyCart">"سلتي "</string>
+    <string name="Favorites">"المفضلة "</string>
+    <string name="Restaurant">"مطعم "</string>
+    <string name="MyAccount">"حسابي "</string>
+    <string name="aboutus">عني</string>
+    <string name="app_name">مطعم سوشي</string>
+    <string name="sign_in_now">"تسجيل الدخول الان "</string>
+    <string name="register">تسجيل</string>
+    <string name="terms_and_conditions">القوائم والشروط</string>
+    <string name="hello_blank_fragment">اهلا</string>
+    <string name="sign_in">تسجيل االدخول</string>
+    <string name="forgetpassword">نسيت الباسورد</string>
+    <string name="sign_in_button">"تسجيل الدخول "</string>
+    <string name="don_t_have_an_account">"ليس لدي حساب "</string>
+    <string name="Register">تسجيل جديد</string>
+    <string name="Alreadyhaveanaccoun">"لدي حساب بالفعل "</string>
+    <string name="title_activity_home">"الرئسية "</string>
+    <string name="action_settings">"الاعدادات "</string>
+    <string name="menu_home">"الرئسية "</string>
+    <string name="freelyrimshrimp">Free lyrimShrimp</string>
+    <string name="categories_1">Categories 1</string>
+</resources>

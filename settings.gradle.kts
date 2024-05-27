@@ -15,4 +15,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Sushi Restaurant"
 include(":app")
- 
+include(":domain")
+include(":data")

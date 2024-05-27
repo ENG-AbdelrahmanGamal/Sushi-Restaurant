@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">Sushi Restaurant</string>
+    <string name="sign_in_now">Sign In Now</string>
+    <string name="register">Register</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in">Sign In !</string>
+    <string name="forgetpassword">Forgot password ?</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="don_t_have_an_account">Don’t have an account,</string>
+    <string name="Register">Register ?</string>
+    <string name="Alreadyhaveanaccoun">"Already have an account, "</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="order">Order</string>
+    <string name="menu">Menu</string>
+    <string name="MyCart">My Cart</string>
+    <string name="Favorites">Favorites</string>
+    <string name="Restaurant">Restaurant</string>
+    <string name="MyAccount">My Account</string>
+    <string name="aboutus">"About Us "</string>
+    <string name="freelyrimshrimp">Free lyrimShrimp</string>
+    <string name="categories_1">Categories 1</string>
 </resources>
