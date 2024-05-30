@@ -5,10 +5,10 @@
     android:background="@color/main"
     android:layout_height="match_parent">
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="75.5dp"
+        android:layout_height="75.5dp"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@mipmap/layer_2"
+        android:src="@mipmap/layer_22"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>

@@ -31,4 +31,9 @@
     <string name="aboutus">"About Us "</string>
     <string name="freelyrimshrimp">Free lyrimShrimp</string>
     <string name="categories_1">Categories 1</string>
+    <string name="user_name">user name</string>
+    <string name="password">password</string>
+    <string name="e_mail">E-mail</string>
+    <string name="contactus">Contact US</string>
+    <string name="TermsandConditions">Terms and Conditions</string>
 </resources>

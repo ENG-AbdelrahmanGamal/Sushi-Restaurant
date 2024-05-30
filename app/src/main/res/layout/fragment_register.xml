@@ -3,9 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".RegisterFragment">
 
     <LinearLayout
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -14,26 +16,26 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="270dp"
+        android:layout_height="250dp"
         android:scaleType="fitXY"
-        android:src="@mipmap/selective_color_1" />
+        android:src="@drawable/selective_color_1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/register"
         android:textColor="#322e2b"
-        android:textSize="56.5sp" />
+        android:textSize="55.5sp" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="5dp"
-        android:hint="user name "
+        android:hint="@string/user_name"
         android:drawablePadding="7dp"
         android:paddingStart="5dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:drawableStart="@drawable/sharp_person_24" />
         <com.google.android.material.textfield.TextInputEditText
@@ -44,7 +46,7 @@
             android:layout_marginEnd="20dp"
             android:drawablePadding="7dp"
             android:paddingStart="5dp"
-            android:hint="E-mail"
+            android:hint="@string/e_mail"
             android:drawableStart="@drawable/baseline_attach_email_24" />
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -52,7 +54,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:drawablePadding="7dp"
-            android:hint="password"
+            android:hint="@string/password"
             android:paddingStart="5dp"
             android:drawableStart="@drawable/baseline_lock_24" />
     <com.google.android.material.textfield.TextInputEditText
@@ -65,34 +67,43 @@
         android:paddingStart="5dp"
         android:drawableStart="@drawable/baseline_local_phone_24" />
 
-
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/bt_signIN"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/bt_register"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:padding="15dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="90dp"
         android:backgroundTint="@color/main"
         android:text="@string/register"
         />
-        <LinearLayout
-            android:padding="5dp"
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="50dp">
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/bt_register"
+        app:layout_constraintStart_toStartOf="@+id/bt_register"
+        app:layout_constraintEnd_toEndOf="@+id/bt_register"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
 
-            <ImageView
-                android:layout_marginStart="100dp"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@mipmap/google"/>
-            <ImageView
-                android:layout_marginStart="20dp"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@mipmap/facebook"/>
-        </LinearLayout>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/google"/>
+        <ImageView
+            android:layout_marginStart="20dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/facebook"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="horizontal"
@@ -105,6 +116,7 @@
                 android:text="@string/Alreadyhaveanaccoun"
                 />
             <TextView
+                android:id="@+id/tv_signIn"
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="4dp"
                 android:layout_width="wrap_content"
