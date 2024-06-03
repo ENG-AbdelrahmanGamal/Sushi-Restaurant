@@ -35,4 +35,17 @@
     <string name="e_mail">E-mail</string>
     <string name="contactus">Contact US</string>
     <string name="TermsandConditions">Terms and Conditions</string>
+    <string name="free_lyrimshrimp">Free lyrimShrimp</string>
+    <string name="Friday">Friday</string>
+    <string name="_49_99">49:99</string>
+    <string name="username">Username</string>
+    <string name="language">language</string>
+    <string name="item_1">item 1</string>
+    <string name="price">49.99EGP</string>
+    <string name="itemdetails">"   the bu eat result in retake\ndbt uri your fats and calories\nthe bdg eat hresult in retakey"</string>
+    <string name="addtocart">Add to Cart</string>
+    <string name="add_more">Add More</string>
+    <string name="purchase">Purchase</string>
+    <string name="more">More</string>
+    <string name="you_ll_pay">you\'ll pay</string>
 </resources>

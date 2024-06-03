@@ -3,5 +3,14 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="main">#ffa544</color>
+    <color name="buttonColor">@color/main</color>
+    <color name="light_orange">#ffa544</color>
 
+    <color name="butterscotch">#ffc444</color>
+<color name="textcolor">#322e2b</color>
+    <color name="greyish_brown">#423e3c</color>
+
+    <color name="warm_grey">#a1a1a1</color>
+
+    <color name="pale_orange">#ffaa4f</color>
 </resources>

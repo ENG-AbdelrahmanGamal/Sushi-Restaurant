@@ -73,7 +73,8 @@ dependencies {
     //design library
 //    implementation("com.android.support:design:34.0.0")
 
-
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
+    implementation ("com.google.android.material:material:1.8.0")
 
 
 

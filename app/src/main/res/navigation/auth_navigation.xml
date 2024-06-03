@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.example.sushirestaurant.RegisterFragment"
+        android:name="com.example.sushirestaurant.auth.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.example.sushirestaurant.SignInFragment"
+        android:name="com.example.sushirestaurant.auth.SignInFragment"
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/startFragment"
-        android:name="com.example.sushirestaurant.StartFragment"
+        android:name="com.example.sushirestaurant.auth.StartFragment"
         android:label="fragment_start"
         tools:layout="@layout/fragment_start" >
         <action

@@ -21,24 +21,28 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.sushirestaurant.R
 import com.example.sushirestaurant.databinding.FragmentHomeBinding
+import com.example.sushirestaurant.ui.home.OfferModel.Companion.getOffer
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.navigation.NavigationView.OnNavigationItemSelectedListener
 
-class HomeFragment : Fragment(), NavigationView.OnNavigationItemSelectedListener {
+class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
 
     private val binding get() = _binding!!
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+        val homeViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
@@ -48,36 +52,22 @@ class HomeFragment : Fragment(), NavigationView.OnNavigationItemSelectedListener
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val drawer = ActionBarDrawerToggle(
-            requireActivity(),
-            binding.drawerLayout,
-            binding.toolbar,
-            R.string.navigation_drawer_open,
-            R.string.navigation_drawer_close
-        )
-        binding.drawerLayout.addDrawerListener(drawer)
-        drawer.syncState()
-        binding.navView.setNavigationItemSelectedListener(this)
+
+
+        binding.recyclerGetOffer.apply {
+            layoutManager = GridLayoutManager(requireContext(),2)
+
+            adapter = OfferAdapter(getOffer())
+
+        }
+0
     }
-
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
 
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-             R.id.nav_my_account->{
-                 view?.let { Navigation.findNavController(it).navigate(R.id.mobile_navigation) }
-            }
 
-            else -> super.onOptionsItemSelected(item)
-        }
-
-        binding.drawerLayout.closeDrawer(Gravity.LEFT)
-        return true
-    }
 
     fun onBackPressed() {
         binding.drawerLayout.closeDrawer(Gravity.LEFT)
