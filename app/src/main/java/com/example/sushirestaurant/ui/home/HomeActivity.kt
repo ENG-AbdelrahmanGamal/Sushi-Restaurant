@@ -53,7 +53,6 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         binding.drawerLayoutActivity.closeDrawer(Gravity.LEFT)
         when (item.itemId) {
             R.id.nav_home -> {
-                Toast.makeText(this, "Home", Toast.LENGTH_LONG).show()
                 navigate(R.id.nav_home)
 
             }

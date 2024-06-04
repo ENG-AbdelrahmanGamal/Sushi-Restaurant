@@ -68,7 +68,8 @@
             android:layout_gravity="end"
             android:layout_marginTop="-30dp"
             android:layout_marginEnd="-30dp"
-            android:backgroundTint="@color/main"
+            android:backgroundTint="@color/buttonColor"
+
             app:cardCornerRadius="200dp">
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -78,10 +79,11 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginBottom="20dp"
 
-                android:src="@drawable/heart_6_" />
+                android:src="@drawable/heart" />
 
 
         </androidx.cardview.widget.CardView>
+
 
         <ImageView
             android:layout_width="200dp"

@@ -10,22 +10,23 @@
         android:id="@+id/im_order_header"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:layout_marginTop="-10dp"
         android:src="@drawable/mycartheadear"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/fab"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/fab_background"
+        android:background="@drawable/border_item"
         app:layout_constraintBottom_toTopOf="@+id/bt_purchase"
         app:layout_constraintStart_toStartOf="@id/bt_purchase">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:backgroundTint="@color/main"
             android:labelFor="@id/bt_register"
             android:src="@drawable/baseline_add_24"
@@ -36,47 +37,53 @@
             android:id="@+id/fab_lable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingEnd="15dp"
             android:layout_gravity="center|end"
-            android:paddingEnd="20dp"
+            android:gravity="center"
             android:text="@string/more"
             android:textSize="20dp" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
+
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/fab_price"
+        style="@style/main_custom_button"
         android:layout_width="200dp"
         android:layout_height="50dp"
-     style="@style/main_custom_button"
         android:layout_marginBottom="20dp"
-        android:background="@color/main"
+        android:background="@drawable/main_custom_button"
         app:layout_constraintBottom_toTopOf="@+id/bt_purchase"
-        app:layout_constraintEnd_toEndOf="@+id/bt_purchase">
+        app:layout_constraintEnd_toEndOf="@+id/bt_purchase"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/fab">
 
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_gravity="center_vertical"
-          android:textSize="20dp"
-          android:text="@string/you_ll_pay"
-          app:backgroundTint="@color/white"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/you_ll_pay"
+            android:textColor="@color/white"
+            android:textSize="20dp"
 
-          />
+            />
 
         <TextView
             android:id="@+id/fab_lable_price"
-            android:layout_width="wrap_content"
+            style="@style/second_custom_button"
+            android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_gravity="center|end"
-            android:paddingEnd="10dp"
-            style="@style/second_custom_button"
+            android:background="@drawable/custom_button_white"
+            android:paddingEnd="4dp"
             android:text="@string/price"
-            android:textSize="20dp" />
+            android:gravity="center"
+            android:textColor="@color/main"
+            android:textSize="16dp" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/bt_purchase"
-        android:layout_width="350dp"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="@drawable/main_custom_button"
